@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,10 +31,18 @@ export default function RootLayout({
             <h1 className="text-2xl font-bold tracking-tight">JGB Accounting</h1>
             <nav>
               <ul className="flex gap-6 text-base">
-                <li><a href="/" className="hover:underline">Home</a></li>
-                <li><a href="/services" className="hover:underline">Services</a></li>
-                <li><a href="/about" className="hover:underline">About</a></li>
-                <li><a href="/contact" className="hover:underline">Contact</a></li>
+                <li>
+                  <Link href="/" className="hover:underline">Home</Link>
+                </li>
+                <li>
+                  <Link href="/services" className="hover:underline">Services</Link>
+                </li>
+                <li>
+                  <Link href="/about" className="hover:underline">About</Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:underline">Contact</Link>
+                </li>
               </ul>
             </nav>
           </div>

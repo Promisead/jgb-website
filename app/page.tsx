@@ -1,12 +1,10 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
-       <section className="text-center py-16">
-      <h2 className="text-4xl font-bold mb-4">Welcome to JGB Accounting</h2>
-      <p className="text-lg mb-8">
-        Professional accounting services tailored for your business needs.
+    <section className="flex flex-col items-center justify-center min-h-[60vh] py-16 px-4">
+      <h2 className="text-4xl font-bold mb-4 text-blue-900">Welcome to JGB Accounting</h2>
+      <p className="text-lg mb-8 max-w-2xl text-center">
+        JGB Accounting provides professional, reliable, and tailored accounting services for businesses and individuals. 
+        Let us help you achieve financial clarity and success with our expert team and personalized approach.
       </p>
       <a
         href="/contact"
@@ -14,7 +12,6 @@ export default function Home() {
       >
         Get Started
       </a>
-    </section>   
-    </div>
+    </section>
   );
 }
